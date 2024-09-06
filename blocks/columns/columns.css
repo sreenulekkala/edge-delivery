@@ -1,0 +1,36 @@
+.columns-wrapper {
+  display: flex;
+  padding-top: 130px;
+  padding-left: 40px;
+}
+
+.columns {
+  font-size: large;
+}
+
+.columns > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns img {
+  width: 100%;
+}
+
+.columns > div > .columns-img-col {
+  order: 0;
+  padding-bottom: 8px; /* Optional: add some padding for spacing */
+}
+
+.columns > div  {
+  display: block;
+  border-bottom: 1px solid grey; /* Add a grey separator line */
+}
+
+@media (width >= 900px) {
+  .columns > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 32px;
+  }
+}
